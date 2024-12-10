@@ -1,0 +1,49 @@
+﻿<Window x:Class="InformationSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InformationSystem"
+        mc:Ignorable="d"
+        Title="Personal" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="ButtonCreate"
+                    Grid.Row="0" Grid.Column="0"
+                    Margin="3"
+                    Click="ButtonCreate_Click"
+                    Content="Create"/>
+            <Button x:Name="ButtonDelete"
+                    Grid.Row="1" Grid.Column="0"
+                    Margin="3"
+                    Click="ButtonDelete_Click"
+                    Content="Delete"/>
+            <Button x:Name="ButtonClose"
+                    Grid.Row="3" Grid.Column="0"
+                    Margin="3"
+                    Click="ButtonClose_Click"
+                    Content="Close"/>
+            
+        </Grid>
+        
+        <Frame Grid.Row="0" Grid.Column="1" x:Name="FrameWorkSpase">
+            
+        </Frame>
+    </Grid>
+</Window>
